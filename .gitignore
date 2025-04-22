@@ -1,0 +1,60 @@
+# === Python / Backend ===
+
+# Virtual environment
+env/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Test + type checker caches
+.pytest_cache/
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# === Node.js / Frontend ===
+
+# Dependencies
+node_modules/
+
+# Production build
+dist/
+build/
+
+# Vite cache
+.vite/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env.local
+.env.development
+.env.test
+.env.production
+
+# === OS / Editor Stuff ===
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# === Misc ===
+*.tgz
