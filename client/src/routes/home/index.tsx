@@ -59,7 +59,7 @@ export default function Home() {
             const centerX = (minX + maxX) / 2;
             const centerY = (minY + maxY) / 2;
 
-            setLatexPosition({ x: centerX, y: centerY });
+            //setLatexPosition({ x: centerX, y: centerY });
             resp.data.forEach((data: Response) => {
                 setTimeout(() => {
                     setResult({
