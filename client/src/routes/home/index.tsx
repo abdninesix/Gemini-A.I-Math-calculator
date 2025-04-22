@@ -77,7 +77,7 @@ export default function Home() {
     const [reset, setReset] = useState(false)
     const [result, setResult] = useState<GeneratedResult>()
     const [latexExpression, setLatexExpression] = useState<Array<String>>([])
-    const [latexPosition, setLatexPosition] = useState({ x: 10, y: 200 })
+    //const [latexPosition, setLatexPosition] = useState({ x: 10, y: 200 })
     const [dictOfVars, setDictOfVars] = useState({})
 
     useEffect(() => {
