@@ -122,7 +122,9 @@ export default function Home() {
         script.onload = () => {
             window.MathJax.Hub.Config({
                 tex2jax: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+                "HTML-CSS": { linebreaks: { automatic: true } },
             });
+            window.MathJax.Hub.Queue(["Typeset", window.MathJax.Hub]);
         };
 
         return () => {
@@ -247,9 +249,15 @@ export default function Home() {
             />
 
             {latexExpression && latexExpression.map((latex, index) => (
-                <div key={index} className="flex flex-col p-2 text-black text-xs drop-shadow-sm">
+
+                <div
+                    key={index}
+                    className="break-words whitespace-normal overflow-auto max-w-full w-fit p-2 text-black text-xs drop-shadow-sm"
+                >
                     {latex}
                 </div>
+
+
             ))}
 
         </div>
